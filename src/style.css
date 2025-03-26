@@ -1,0 +1,129 @@
+:root{
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    font-family: var(--font);
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
+h1,h2,h3,h4,h5,h6,p{
+    color: white;
+}
+
+.task-tabel{
+    width: 80vw;
+}
+.header{
+    border-radius:15px 15px 0 0 ;
+    width: 100%;
+    background: blue;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-add{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: 0.5s;
+    
+}
+.btn-add:hover{
+    background-color: aquamarine;
+    scale: 1.1;
+}
+
+.task-tabel{
+    background-color: #ffffffbf;
+    border-radius:15px 15px 0 0 ;
+}
+.tasks:hover>:not(:hover){
+    filter: blur(5px);
+    opacity: 0.5;
+}
+.task-tabel{
+    padding: 0;
+    height: 100%;
+}
+.tasks{
+    transition: 1s;
+}
+.task{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background: whitesmoke;
+    padding: 10px;
+    margin: 5px 3%;
+    transition: 1s;
+}
+.task:hover{
+    box-shadow: 3px 3px 15px black ;
+}
+.task h3,h4{
+    color: black;
+
+}
+.delet{
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.aredone{
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mod{
+    background-color: yellow;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.events{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+} 
+button{
+    border: none;
+}
+.done{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    margin: 5px 3%;
+    transition: 1s;
+    background-color: hsl(120, 90%, 51%);
+}
+.not{
+    background-color: green;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
